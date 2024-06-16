@@ -500,6 +500,7 @@ footer {
     font-size: 13px;
     font-family: var(--fonte-Unbounded);
     font-weight: 400;
+    margin: 0px 0px 2% 0px;
 }
 
 .ver-todos svg {
@@ -615,7 +616,7 @@ button:hover {
 .slideshow-container {
     position: relative;
     max-width: 700px;
-    margin: -120px 0px 0px 500px;
+    margin: -150px 0px 0px 400px;
     overflow: hidden;
 }
 
