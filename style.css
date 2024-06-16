@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-Vermelho: #F22424;
+    --cor-texto: #ffffff;
+    --fonte-Montserrat: "Montserrat", sans-serif;
+    --fonte-Unbounded: "Unbounded", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* __________________________________________ PAGINA 01________________________________________ */
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+header {
+    backdrop-filter: blur(10px);
+    background-color: #000;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 25px;
+    border-radius: 10px;
+}
+
+.logo img {
+    height: 65px;
+    padding: 0px 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    border: 1px solid #2B2B2B;
+    border-radius: 50px;
+    padding: 20px 5px;
+    background-color:#0D0D0D;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    color: var(--cor-texto);
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+li :hover{
+    color: var(--cor-texto);
+    transition: 0.4s all ease;
+}
+
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--cor-Vermelho);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(to bottom, #000000 33%, #ff0000 77%); 
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin-top: -350px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: var(--fonte-Montserrat);
+
+}
+
+.button {
+    display: inline-flex; 
+    align-items: center; 
+    background-color: var(--cor-Vermelho);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 13px;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+}
+
+.button svg {
+    margin-left: 5px; 
+    
+}
+
+.car-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 900px;
+    z-index: 0;
+}
+/* __________________________________________ PAGINA 01________________________________________ */
+
+/* __________________________________________ PAGINA 02________________________________________ */
+
+.jogos {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px 150px;
+}
+
+.title-container1 h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.small-card {
+    flex: 1 1 calc(50% - 10px); 
+    min-width: 700px; 
+}
+
+.large-card {
+    flex: 1 1 100%; 
+    max-width: 1430px; 
+}
+
+.icon {
+    background-color: #222;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon span {
+    color: #ff0000;
+    font-size: 1.5em;
+    font-family: var(--fonte-Unbounded);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    flex-grow: 1;
+    font-family: var(--fonte-Montserrat);
+}
+
+.learn-more {
+    color: #ff0000;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: 10px;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.ver-todos {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--cor-Vermelho);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 13px;
+    font-family: var(--fonte-Unbounded);
+    font-weight: 400;
+}
+
+.ver-todos svg {
+    margin-left: 5px;
+}
