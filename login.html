@@ -25,23 +25,23 @@
     <main>
         <div class="layout" id="layout">
             <div class="form-layout cadastrar">
-                <form>
+                <form onsubmit="cadastrar(event)">
                     <h1>Crie a sua conta</h1>
                     <span>Use o seu melhor e-mail e uma senha segura</span>
-                    <input type="text" id="username" placeholder="Nome de usuario" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" id="password" placeholder="Senha" required>
-                    <button onclick="cadastrar()">Cadastre-se</button>
+                    <input type="text" id="register-username" placeholder="Nome de usuario" required>
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <input type="password" id="register-password" placeholder="Senha" required>
+                    <button type="submit">Cadastre-se</button>
                 </form>
             </div>
             <div class="form-layout entrar">
-                <form>
+                <form onsubmit="entrar(event)">
                     <h1>Faça login</h1>
                     <span>Coloque o e-mail e sua senha nos campos abaixo:</span>
-                    <input type="email" id="username" placeholder="Email" name="email" required>
-                    <input type="password" id="password" placeholder="Senha" name="password" required>
+                    <input type="email" id="login-email" placeholder="Email" name="email" required>
+                    <input type="password" id="login-password" placeholder="Senha" name="password" required>
                     <a href="#">Esqueceu sua senha?</a>
-                    <button onclick="entrar()">Entrar</button>
+                    <button type="submit">Entrar</button>
                 </form>
             </div>
             <div class="toggle-layout">
