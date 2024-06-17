@@ -618,6 +618,7 @@ button:hover {
     max-width: 700px;
     margin: -150px 0px 0px 400px;
     overflow: hidden;
+    margin-left: 31.5%;
 }
 
 .mySlides {
@@ -627,6 +628,7 @@ button:hover {
 img {
     vertical-align: middle;
     width: 100%;
+    /*margin-left: 100px;*/
 }
 
 .fade {
@@ -692,3 +694,99 @@ img {
 }
 
 /* ___________________________________________PERGUNTAS FREQUENTES________________________________________  */
+
+.secao-per {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFF;
+    text-align: center;
+}
+
+.texto-per {
+    background-color: #181818;
+    padding: 0.5% 0px 0.5% 0px;
+    margin: 10px 44% 10px 44%;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--cor-Vermelho);
+    font-family: var(--fonte-Montserrat);
+    border-radius: 30px;
+}
+
+.titulo-per {
+    font-weight: 500;
+    font-size: 48px;
+    margin: 0px 35% 0px 35%;
+    font-family: var(--fonte-Unbounded);
+}
+
+.titulo000 {
+    color: var(--cor-texto);
+    font-family: var(--fonte-Unbounded);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perguntas {
+    margin: 60px auto;
+    width: 600px;
+    margin-left: 33.5%;
+    font-family: var(--fonte-Montserrat);
+}
+
+.perguntas li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #181818;
+}
+
+.perguntas li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+label::after {
+    background-color: var(--cor-Vermelho);
+    padding: 5px 10px 5px 10px;
+    content: '➤';
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transform: rotate(180deg);
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.perguntas .conteudo_perguntas {
+    color: #ffffff;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.perguntas input[type="radio"]:checked + label + .conteudo_perguntas {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.perguntas input[type="radio"]:checked + label::after {
+    transform: rotate(90deg);
+}
+
