@@ -38,8 +38,8 @@ Oferecemos alguns serviços caso o usuário goste no nosso site.
 ## Autores
 
 - [@Pedro de Lorezno](https://github.com/PedroLorenzop) (RM554720)
-- [@Vinicius Castro](https://github.com/ViniciusCastroo) (RM558479)
-- [@Metheus Cantiere](https://github.com/matheuscantiere) (RM556137)
+- [@Vinicius Castro](https://github.com/ViniciusCastroo) (RM556137)
+- [@Metheus Cantiere](https://github.com/matheuscantiere) (RM558479)
 - [@Enzo Valieris](https://github.com/Valieris) (RM555119)
 - [@Guilherme Barbiero](https://github.com/GuiBarbiero) (RM555185)
 
