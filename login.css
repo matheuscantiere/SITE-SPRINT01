@@ -28,8 +28,9 @@ body{
 /*HEADER*/
 header {
     backdrop-filter: blur(10px);
-    background-color: #000;
-    
+    background-color: #000; 
+    margin: -13% 0% 5% 0%;
+    padding: 0px 38.5%;
 }
 
 .header-container {
@@ -66,7 +67,6 @@ nav ul li a {
     padding: 10px 15px;
     font-family: var(--fonte-Unbounded);
     font-weight: 400;
-
 }
 
 li {
