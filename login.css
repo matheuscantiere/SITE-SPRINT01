@@ -33,8 +33,6 @@ header {
 }
 
 .header-container {
-    gap: 100%;
-    margin-left: -100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
