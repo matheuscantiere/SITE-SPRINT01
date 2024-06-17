@@ -18,7 +18,7 @@ function entrar(event) {
 
     if (username === "matheus@tamole.com" && password === "oi") {
         alert("Logado com sucesso!");
-        window.open('Pagina01.html');
+        window.open('index.html');
     } else {
         alert("Usuário ou senha incorretos");
     }
@@ -35,6 +35,6 @@ function cadastrar(event) {
         alert("Por favor, preencha todos os campos.");
     } else {
         alert("Conta criada com sucesso!");
-        window.open('pagina2.html', '_blank');
+        window.open('index.html', '_blank');
     }  
 }
