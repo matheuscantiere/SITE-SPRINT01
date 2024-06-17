@@ -790,3 +790,16 @@ input[type="radio"] {
     transform: rotate(90deg);
 }
 
+/*Apenas para melhorar a experiencia para desktop e para notebook*/
+@media (max-width: 1590px) {
+    .perguntas {
+        margin-left: 29.5%;
+    }
+    
+}
+
+@media (max-width: 1920px) {
+    .slideshow-container {
+        margin-left: 31.5%;
+    }
+}
